@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*ใช้ padding โดนไม่ต้องการให้คำนวณรวมกับขนาดของกล่องเเค่ให้ขนาดด้านในของกล่องเพิ่มขึ้น*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 360px; /*ความกว้าง*/
+    margin: 2rem auto; /*จะเห็นได้ว่ากล่องอยู่กึ่งกลาง*/
+    height: 560px;/*สูง*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px; /*ทำให้กรอบโค้งมน*/
+    overflow: hidden; /*ตัดรูปที่เกินออก*/
+}
+
+.img{
+    height: 250px;
+    background: brown;
+
+}
+
+.img img{
+    width: 110%;
+}
+
+.content{
+    text-align: center; /*จัดข้อความอยู่กึ่งกลาง*/
+    border-bottom: 2px solid #f0eaea;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between; /*กล่องซ้ายชิดซ้ายกล่องขวาชิดขวา*/
+    align-items: center; /*จัดกึ่งกลาง*/
+    height: 60px;
+    background-color: #f7bcbc;
+}
+
+.ft-l{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.content h3 {
+    border-bottom: 1px #f0eaea;
+}
+
+.content h1 {
+    margin: 1rem;
+}
+
+.content p {
+    color: #c48484;
+}
+
+.ft-l img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ft-l p {
+    margin-left: .5rem;
+}
+
+.ft-r {
+    padding-right: 2rem;
+}
